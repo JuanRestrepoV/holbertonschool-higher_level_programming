@@ -2,5 +2,7 @@
 """
 This module defines a simple square class.
 """
+
+
 class Square:
     pass
