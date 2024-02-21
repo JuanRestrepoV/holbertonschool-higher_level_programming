@@ -1,10 +1,9 @@
 #!/usr/bin/python3
-"""Class Rectangle that defines a rectangles"""
+"""class Rectangle that defines a rectangles"""
 
 
 class Rectangle:
-    """Constructor initialization and methods"""
-    
+    """Initialization and methods"""
     def __init__(self, width=0, height=0):
         self.__height = height
         self.__width = width
