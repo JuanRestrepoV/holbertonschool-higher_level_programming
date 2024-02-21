@@ -4,6 +4,7 @@
 
 class Rectangle:
     """Constructor initialization and methods"""
+    
     def __init__(self, width=0, height=0):
         self.__height = height
         self.__width = width
