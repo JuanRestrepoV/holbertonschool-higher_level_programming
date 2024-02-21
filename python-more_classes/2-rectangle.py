@@ -1,25 +1,12 @@
 #!/usr/bin/python3
-"""
-This module defines a simple square class
-"""
+"""class Rectangle that defines a rectangles"""
 
 
 class Rectangle:
-    "Class representing a rectangle"
-    pass
-
-
-
-"""
-This module defines a simple square class
-"""
-
-
-class Rectangle:
-    """Class representing a rectangle"""
+    """Initialization and methods"""
     def __init__(self, width=0, height=0):
-        self.__height = height
-        self.__width = width
+        self.height = height
+        self.width = width
 
     @property
     def width(self):
@@ -48,3 +35,11 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
+    
+    def area(self):
+        """Return area of rectangle"""
+        return self.width * self.height
+
+    def perimeter(self):
+        """Return perimeter of rectangle"""
+        return self.width * self.height * 2
