@@ -57,7 +57,7 @@ class Rectangle:
         else:
             rect_matrix = []
             for i in range(self.__height):
-                rect_matrix.append[str(self.print_symbol) * self.__width]
+                rect_matrix = [str(self.print_symbol) * self.__width] * self.__height
             return "\n".join(rect_matrix)
 
     def __repr__(self):
