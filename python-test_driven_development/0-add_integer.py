@@ -1,5 +1,5 @@
 #!/usr/bin/python3
- """
+"""
 Adds two integers.
 Parameters:
 - a (int or float).
