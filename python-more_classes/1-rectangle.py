@@ -1,9 +1,11 @@
 #!/usr/bin/python3
-"""This module defines a simple square class"""
+"""
+This module defines a simple square class
+"""
 
 
 class Rectangle:
-    """Rectangle with width and height"""
+    """Class representing a rectangle"""
     def __init__(self, width=0, height=0):
         self.__height = height
         self.__width = width
