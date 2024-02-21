@@ -54,10 +54,11 @@ class Rectangle:
     def __str__(self):
         if self.width == 0 or self.height == 0:
             return ""
-        rect_matrix = []
-        for _ in range(self.__height):
-            rect_matrix = [str(self.print_symbol) * self.__width]
-        return "\n".join(rect_matrix)
+        else:
+            rect_matrix = []
+            for _ in range(self.__height):
+                rect_matrix = [str(self.print_symbol) * self.__width]
+            return "\n".join(rect_matrix)
 
     def __repr__(self):
         return f'Rectangle({self.__width}, {self.__height})'
