@@ -56,8 +56,8 @@ class Rectangle:
             return ""
         else:
             rect_matrix = []
-            for _ in range(self.__height):
-                rect_matrix = [str(self.print_symbol) * self.__width]
+            for i in range(self.__height):
+                rect_matrix = [str(self.print_symbol) * self.__width] * self.__height
             return "\n".join(rect_matrix)
 
     def __repr__(self):
@@ -66,4 +66,3 @@ class Rectangle:
     def __del__(self):
         print(f"Bye rectangle...")
         Rectangle.number_of_instances -= 1
-
