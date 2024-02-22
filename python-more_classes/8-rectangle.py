@@ -4,18 +4,6 @@
 
 class Rectangle:
     """Initialization and methods"""
-    @staticmethod
-    def bigger_or_equal(rect_1, rect_2):
-        if not isinstance(rect_1, Rectangle):
-            raise TypeError("rect_1 must be an instance of Rectangle")
-        elif not isinstance(rect_2, Rectangle):
-            raise TypeError("rect_2 must be an instance of Rectangle")
-        elif rect_1.area == rect_2.area:
-            return rect_1
-        elif rect_1.area() > rect_2.area():
-            return rect_1
-        elif rect_1.area() < rect_2.area():
-            return rect_2
     number_of_instances = 0
     print_symbol = '#'
 
@@ -79,3 +67,15 @@ class Rectangle:
         print(f"Bye rectangle...")
         Rectangle.number_of_instances -= 1
 
+    @staticmethod
+    def bigger_or_equal(rect_1, rect_2):
+        if not isinstance(rect_1, Rectangle):
+            raise TypeError("rect_1 must be an instance of Rectangle")
+        elif not isinstance(rect_2, Rectangle):
+            raise TypeError("rect_2 must be an instance of Rectangle")
+        elif rect_1.area == rect_2.area:
+            return rect_1
+        elif rect_1.area() > rect_2.area():
+            return rect_1
+        elif rect_1.area() < rect_2.area():
+            return rect_2
