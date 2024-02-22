@@ -1,1 +1,1 @@
-string.isidentifier
+id
