@@ -57,7 +57,7 @@ class Rectangle:
         else:
             rect_matrix = []
             for i in range(self.__height):
-                rect_matrix.append[str(self.print_symbol) * self.__width]
+                rect_matrix = [str(self.print_symbol) * self.__width] * self.__height
             return "\n".join(rect_matrix)
 
     def __repr__(self):
@@ -79,3 +79,7 @@ class Rectangle:
             return rect_1
         elif rect_1.area() < rect_2.area():
             return rect_2
+
+    @classmethod
+    def square(cls, size=0):
+        return cls(size, size)
