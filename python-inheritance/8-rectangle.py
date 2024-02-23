@@ -15,12 +15,11 @@ class BaseGeometry:
         if value <= 0:
             raise ValueError(f"{name} must be greater than 0")
 
-class Rectangle(BaseGeometry):
-    """base class Rectangle inherits from BaseGeometry"""
 
+class Rectangle(BaseGeometry):
+    """class Rectangle inherits from BaseGeometry"""
 
     def __init__(self, width, height):
-        """Constructor method"""
         self.__width = width
         self.__height = height
         self.integer_validator("width", width)
