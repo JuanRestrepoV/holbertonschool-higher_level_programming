@@ -11,9 +11,9 @@ class Student:
  
     def to_json(self, attrs=None):
         dictionary = {}
-        if hasattr(self, '__dict__'):
+        if attrs is not None:
             for key, value in self.__dict__.items():
-                if not callable(value):
+                if key in attrs:
                     dictionary[key] = value
             return dictionary
         return self.__dict__
