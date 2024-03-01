@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-class Rectangle that inherits from Base
+Module defining a class Rectangle that inherits from Base
 """
 
 
@@ -63,3 +63,4 @@ class Rectangle(Base):
         def y(self, value):
             """setter for y"""
             self.__y = value
+if __name__ == "__main__":
