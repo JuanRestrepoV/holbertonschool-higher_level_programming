@@ -23,37 +23,37 @@ class Rectangle(Base):
         def width(self):
             """getter for width"""
             return self.__width
-        
+
         @width.setter
         def width(self, value):
             """setter for width"""
             self.__width = value
-        
+
         @property
         def height(self):
             """Getter for height"""
             return self.__height
-        
+
         @height.setter
         def height(self, value):
             """setter for height"""
             self.__width = value
-        
+
         @property
         def x(self):
             """getter for x"""
             return self.__x
-        
+
         @x.setter
         def x(self, value):
             """setter for x"""
             self.__x = value
-        
+
         @property
         def y(self):
             """getter for y"""
             return self.__y
-        
+
         @y.setter
         def y(self, value):
             """setter for y"""
