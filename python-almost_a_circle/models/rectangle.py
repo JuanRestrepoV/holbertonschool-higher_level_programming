@@ -23,51 +23,42 @@ class Rectangle(Base):
         self.__x = x
         self.__y = y
 
-        @property
-        def width(self):
-            """getter for width"""
-            return self.__width
+    @property
+    def width(self):
+        """getter for width"""
+        return self.__width
 
-        @width.setter
-        def width(self, value):
-            """setter for width"""
-            self.__width = value
+    @width.setter
+    def width(self, value):
+        """setter for width"""
+        self.__width = value
 
-        @property
-        def height(self):
-            """Getter for height"""
-            return self.__height
+    @property
+    def height(self):
+        """Getter for height"""
+        return self.__height
 
-        @height.setter
-        def height(self, value):
-            """setter for height"""
-            self.__width = value
+    @height.setter
+    def height(self, value):
+        """setter for height"""
+        self.__width = value
 
-        @property
-        def x(self):
-            """getter for x"""
-            return self.__x
+    @property
+    def x(self):
+        """getter for x"""
+        return self.__x
 
-        @x.setter
-        def x(self, value):
-            """setter for x"""
-            self.__x = value
+    @x.setter
+    def x(self, value):
+        """setter for x"""
+        self.__x = value
 
-        @property
-        def y(self):
-            """getter for y"""
-            return self.__y
+    @property
+    def y(self):
+        """getter for y"""
+        return self.__y
 
-        @y.setter
-        def y(self, value):
-            """setter for y"""
-            self.__y = value
-if __name__ == "__main__":
-    r1 = Rectangle(10, 2)
-    print(r1.id)
-
-    r2 = Rectangle(2, 10)
-    print(r2.id)
-
-    r3 = Rectangle(10, 2, 0, 0, 12)
-    print(r3.id)
+    @y.setter
+    def y(self, value):
+        """setter for y"""
+        self.__y = value
