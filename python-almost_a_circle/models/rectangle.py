@@ -4,20 +4,15 @@ Module defining a class Rectangle that inherits from Base
 """
 
 
+from models.base import Base
+
+
 class Rectangle(Base):
     """
     Args:
         Base (_type_): _description_
     """
     def __init__(self, width, height, x=0, y=0, id=None):
-        """
-        Args:
-            width (_type_): _description_
-            height (_type_): _description_
-            x (int, optional): _description_. Defaults to 0.
-            y (int, optional): _description_. Defaults to 0.
-            id (_type_, optional): _description_. Defaults to None.
-        """
         super()__init__(id)
         self.__width = width
         self.__height = height
@@ -63,12 +58,3 @@ class Rectangle(Base):
         def y(self, value):
             """setter for y"""
             self.__y = value
-if __name__ == "__main__":
-    r1 = Rectangle(10, 2)
-    print(r1.id)
-
-    r2 = Rectangle(2, 10)
-    print(r2.id)
-
-    r3 = Rectangle(10, 2, 0, 0, 12)
-    print(r3.id)
