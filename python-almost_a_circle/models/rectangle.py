@@ -94,7 +94,7 @@ class Rectangle(Base):
             "[Rectangle] ({}) {}/{} - {}/{}".format
             (self.id, self.x, self.y, self.width, self.height)
         )
-    
+
     def update(self, *args):
         """Method that asign an argument to each attribute
         """
