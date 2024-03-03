@@ -112,11 +112,11 @@ class Rectangle(Base):
         """returns the dictionary representation of
         a rectangle
         """
-        dict_rectangle = {
+        rect = {
             "id": self.id,
             "width": self.width,
             "height": self.height,
             "x": self.x,
             "y": self.y
         }
-        return dict_rectangle
+        return rect
